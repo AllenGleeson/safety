@@ -9,7 +9,7 @@ export function Logo({ tone = "dark" }: LogoProps) {
   const color = tone === "light" ? "text-paper" : "text-ink";
 
   return (
-    <Link href="/" className={`group flex items-center gap-3 ${color}`}>
+    <Link href="/" className={`flex items-center gap-3 ${color}`}>
       <svg
         viewBox="0 0 36 36"
         className="h-9 w-9 shrink-0"

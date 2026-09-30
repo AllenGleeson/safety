@@ -21,7 +21,7 @@ export function LegalLayout({
             {title}
           </h1>
           <p className="mt-3 text-sm text-ink-soft">Last updated {updated}</p>
-          <div className="legal-copy mt-10 space-y-5 text-[15px] leading-relaxed text-ink-soft">
+          <div className="mt-10 space-y-5 text-[15px] leading-relaxed text-ink-soft">
             {children}
           </div>
         </article>

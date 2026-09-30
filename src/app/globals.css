@@ -6,8 +6,6 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --color-ink: #161410;
   --color-ink-soft: #3a352e;
   --color-paper: #f3eee3;
@@ -15,8 +13,6 @@
   --color-cream: #faf6ee;
   --color-brass: #b8955a;
   --color-brass-light: #d4b57a;
-  --color-olive: #3e4a3c;
-  --color-olive-deep: #2c332b;
   --color-line: rgb(22 20 16 / 0.12);
   --font-sans: var(--font-outfit);
   --font-serif: var(--font-fraunces);

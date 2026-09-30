@@ -17,28 +17,25 @@ export default function PrivacyPage() {
       </p>
       <h2 className="pt-4 font-serif text-2xl text-ink">What we collect</h2>
       <p>
-        If you send an enquiry, we collect your name, email address, optional
-        phone number, topic, and message. Server logs may include IP address,
-        browser type, and pages requested. We do not use this site to collect
-        payment card details.
+        If you email us, we receive whatever you include in that message.
+        Server logs may include IP address, browser type, and pages requested.
+        We do not use this site to collect payment card details.
       </p>
       <h2 className="pt-4 font-serif text-2xl text-ink">How we use it</h2>
       <p>
-        We use enquiry details to reply to you and, where relevant, to discuss
-        training, partnership, or curriculum questions. Course enrolment,
-        progress, and certificates are handled on the training platform under
-        that platform’s own terms and privacy notice.
+        We use contact details to reply to you. Course enrolment, progress, and
+        certificates are handled on the training platform under that
+        platform’s own terms and privacy notice.
       </p>
       <h2 className="pt-4 font-serif text-2xl text-ink">Sharing</h2>
       <p>
         We do not sell personal information. We may share data with service
-        providers who host this site (for example Vercel), process forms, or
-        provide email — only as needed to operate the service — or if required
-        by law.
+        providers who host this site (for example Vercel) — only as needed to
+        operate the service — or if required by law.
       </p>
       <h2 className="pt-4 font-serif text-2xl text-ink">Retention</h2>
       <p>
-        Enquiry records are kept only as long as needed to respond and to
+        Email correspondence is kept only as long as needed to respond and to
         maintain a reasonable business record, then deleted or anonymised.
       </p>
       <h2 className="pt-4 font-serif text-2xl text-ink">Your rights</h2>
