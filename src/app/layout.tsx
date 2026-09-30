@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     template: `%s — ${site.name}`,
   },
   description: site.description,
+  icons: {
+    icon: [{ url: `${site.basePath}/mini-logo.PNG`, type: "image/png" }],
+    shortcut: `${site.basePath}/mini-logo.PNG`,
+    apple: `${site.basePath}/mini-logo.PNG`,
+  },
   openGraph: {
     title: `${site.name} — Firearms Safety Essentials`,
     description: site.description,

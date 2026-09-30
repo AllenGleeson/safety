@@ -14,7 +14,7 @@ export function About() {
         </div>
         <div className="space-y-5 text-base leading-relaxed text-ink-soft lg:col-span-7">
           <p>
-            Aperture Safety exists because too many people meet a firearm
+            Barron Sports exists because too many people meet a firearm
             without a teacher. We wrote {course.name} so adults can learn a
             professional standard in one place: how to handle, store, transport,
             and think about firearms so that nobody is injured by haste or habit.

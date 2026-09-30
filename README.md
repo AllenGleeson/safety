@@ -1,4 +1,4 @@
-# Aperture Safety
+# Barron Sports
 
 Marketing site for one firearms safety course, **Firearms Safety Essentials**. Next.js static export, ready for **GitHub Pages**. Enrolment lives on a separate platform; this site only links there.
 

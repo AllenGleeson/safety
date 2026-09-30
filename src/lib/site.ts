@@ -1,5 +1,5 @@
 export const site = {
-  name: "Aperture Safety",
+  name: "Barron Sports",
   legalName: "Barron Sports",
   description:
     "A structured firearms safety course for adults who own, or intend to own, a firearm.",
