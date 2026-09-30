@@ -1,16 +1,18 @@
 export const site = {
   name: "Aperture Safety",
-  legalName: "Aperture Safety Training",
+  legalName: "Barron Sports",
   description:
-    "One structured firearms safety course for adults who own, or intend to own, a firearm. Training only — we do not sell firearms or ammunition.",
+    "A structured firearms safety course for adults who own, or intend to own, a firearm.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
   coursesUrl:
     process.env.NEXT_PUBLIC_COURSES_URL ?? "https://learn.aperturesafety.com",
-  email: "hello@aperturesafety.com",
-  phone: "+1 (555) 014-2208",
+  email: "gary@barronsports.ie",
+  phone: "+353 87 744 1042",
   address: {
-    line1: "1200 Rangeview Drive, Suite 4",
-    line2: "Austin, TX 78704",
+    name: "Barron Sports",
+    line1: "Newpark, Ennis, Co. Clare, Ireland",
+    eircode: "V95 XPK8",
   },
 } as const;
 

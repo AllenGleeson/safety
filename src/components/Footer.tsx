@@ -23,9 +23,9 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm text-paper/80">
             {nav.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="hover:text-brass-light">
+                <Link href={item.href} className="hover:text-brass-light">
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
@@ -61,18 +61,25 @@ export function Footer() {
               </Link>
             </li>
           </ul>
-          <p className="mt-8 text-sm text-paper/60">
-            {site.email}
+          <p className="mt-8 text-sm leading-relaxed text-paper/60">
+            <a href={`mailto:${site.email}`} className="hover:text-brass-light">
+              {site.email}
+            </a>
             <br />
-            {site.phone}
+            <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="hover:text-brass-light">
+              {site.phone}
+            </a>
+            <br />
+            {site.address.name}, {site.address.line1}
+            <br />
+            {site.address.eircode}
           </p>
         </div>
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-paper/45 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>
-            © {new Date().getFullYear()} {site.legalName}. Education only — not a
-            firearms dealer.
+            © {new Date().getFullYear()} {site.legalName}.
           </p>
           <p>Safety instruction is not legal advice or a licence.</p>
         </div>

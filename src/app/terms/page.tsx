@@ -14,13 +14,11 @@ export default function TermsPage() {
         Safety Essentials is delivered on a separate training platform;
         enrolment there is subject to that platform’s terms.
       </p>
-      <h2 className="pt-4 font-serif text-2xl text-ink">Education only</h2>
+      <h2 className="pt-4 font-serif text-2xl text-ink">The course</h2>
       <p>
-        {site.legalName} provides firearms safety education. We are not a
-        firearms dealer. Nothing on this site is an offer to sell a firearm,
-        ammunition, or related equipment. Instruction is not a substitute for
-        licensing, a background check, or advice from a qualified attorney in
-        your jurisdiction.
+        This website introduces our firearms safety course. Completing the
+        course is not a substitute for licensing, a background check, or advice
+        from a qualified attorney in your jurisdiction.
       </p>
       <h2 className="pt-4 font-serif text-2xl text-ink">Responsible use</h2>
       <p>

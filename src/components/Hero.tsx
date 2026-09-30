@@ -1,5 +1,5 @@
 import { CoursesCta } from "@/components/CoursesCta";
-import { course, site } from "@/lib/site";
+import { course } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -7,7 +7,7 @@ export function Hero() {
       <div className="reticle-grid pointer-events-none absolute inset-0 opacity-70" />
       <div className="pointer-events-none absolute -right-24 top-20 h-[28rem] w-[28rem] rounded-full border border-brass/20" />
       <div className="pointer-events-none absolute -right-8 top-36 h-[18rem] w-[18rem] rounded-full border border-brass/30" />
-      <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-5 pb-24 pt-32 sm:px-8 lg:grid-cols-12 lg:pb-28 lg:pt-36">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-5 pb-10 pt-24 sm:px-8 lg:grid-cols-12 lg:pb-12 lg:pt-28">
         <div className="lg:col-span-7">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brass">
             {course.eyebrow} · {course.name}
@@ -30,8 +30,7 @@ export function Hero() {
             </a>
           </div>
           <p className="mt-5 text-sm text-paper/50">
-            Enrol on our training platform — {site.name} does not sell firearms
-            or ammunition.
+            Enrol on our training platform.
           </p>
         </div>
         <div className="relative lg:col-span-5">
@@ -60,12 +59,11 @@ export function Hero() {
         </div>
       </div>
       <div className="relative border-t border-white/10">
-        <div className="mx-auto grid max-w-6xl gap-6 px-5 py-8 sm:grid-cols-2 sm:px-8 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-6xl gap-6 px-5 py-5 sm:grid-cols-3 sm:px-8">
           {[
             course.duration,
             course.format,
             course.outcome,
-            "Education only — no sales",
           ].map((item) => (
             <p
               key={item}

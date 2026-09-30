@@ -50,8 +50,8 @@ export default function PrivacyPage() {
       </p>
       <h2 className="pt-4 font-serif text-2xl text-ink">Contact</h2>
       <p>
-        Privacy questions: {site.email}. Postal: {site.address.line1},{" "}
-        {site.address.line2}.
+        Privacy questions: {site.email}. Postal: {site.address.name},{" "}
+        {site.address.line1}, {site.address.eircode}.
       </p>
     </LegalLayout>
   );

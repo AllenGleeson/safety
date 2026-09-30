@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { CoursesCta } from "@/components/CoursesCta";
 import { Logo } from "@/components/Logo";
 import { nav } from "@/lib/site";
@@ -46,7 +47,7 @@ export function Header({ solid = false }: HeaderProps) {
         <Logo tone={isSolid ? "dark" : "light"} />
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
           {nav.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className={`text-[13px] font-medium tracking-wide transition hover:text-brass ${
@@ -54,7 +55,7 @@ export function Header({ solid = false }: HeaderProps) {
               }`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="hidden lg:block">
@@ -82,14 +83,14 @@ export function Header({ solid = false }: HeaderProps) {
         >
           <nav className="flex flex-col gap-4" aria-label="Mobile">
             {nav.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="text-base font-medium"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <CoursesCta className="mt-2 w-full" />
           </nav>

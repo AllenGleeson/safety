@@ -20,10 +20,9 @@ export function About() {
             and think about firearms so that nobody is injured by haste or habit.
           </p>
           <p>
-            We are an education company. Instructors wrote this course.
-            Enrolment and completion live on a dedicated training platform. We
-            do not run a gun counter, and we do not treat safety as a footnote
-            to marksmanship.
+            Instructors wrote this course. Enrolment and completion live on a
+            dedicated training platform. Safety is taught as its own standard,
+            not as a footnote to marksmanship.
           </p>
           <p>
             If you own a firearm, intend to, or share a household with one —

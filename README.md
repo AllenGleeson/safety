@@ -1,6 +1,6 @@
 # Aperture Safety
 
-Marketing site for one firearms safety course, **Firearms Safety Essentials**. Next.js, Tailwind CSS, ready for Vercel. Enrolment lives on a separate platform; this site only links there.
+Marketing site for one firearms safety course, **Firearms Safety Essentials**. Next.js static export, ready for **GitHub Pages**. Enrolment lives on a separate platform; this site only links there.
 
 ## Local
 
@@ -16,13 +16,32 @@ Open [http://localhost:3000](http://localhost:3000).
 
 | Variable | Purpose |
 | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Canonical URL (set to the Vercel domain in production) |
+| `NEXT_PUBLIC_SITE_URL` | Canonical URL |
 | `NEXT_PUBLIC_COURSES_URL` | External training platform (Start the course) |
+| `GITHUB_PAGES` | Set to `true` in CI so assets are prefixed with `/safety` |
+| `NEXT_PUBLIC_BASE_PATH` | Optional local override of that prefix |
 
 Company copy, course name, and contact details live in `src/lib/site.ts`.
 
-## Deploy on Vercel
+## Deploy on GitHub Pages
 
-1. Push this repo and import it in [Vercel](https://vercel.com/new).
-2. Framework preset: Next.js (detected automatically).
-3. Set `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_COURSES_URL`.
+The repo is [AllenGleeson/safety](https://github.com/AllenGleeson/safety). After the first successful workflow run the site is at:
+
+**https://allengleeson.github.io/safety/**
+
+1. In the GitHub repo: **Settings → Pages**.
+2. Set **Source** to **GitHub Actions** (not “Deploy from a branch”).
+3. Push to `main` (or run **Actions → Deploy to GitHub Pages → Run workflow**).
+
+The workflow in `.github/workflows/pages.yml` builds a static export into `out/` and publishes it. GitHub Pages cannot run a Node server, so this project uses `output: "export"` in `next.config.ts`.
+
+To preview a production-style Pages build locally:
+
+```bash
+# PowerShell
+$env:GITHUB_PAGES="true"
+$env:NEXT_PUBLIC_SITE_URL="https://allengleeson.github.io/safety"
+npm run build
+```
+
+The exported files are in `out/`. `npm start` serves that folder (without the `/safety` prefix unless you built with `GITHUB_PAGES=true` and host it under that path).
